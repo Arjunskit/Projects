@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.wrapper {
+    width: 450px;
+    padding: 10px;
+}
+
+.quote-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 3px;
+}
+
+.quote-texts {
+    text-align: center;
+}
+
+.quote-texts i {
+    font-size: 1.5em;
+}
+
+.text {
+    font-size: 1.25em;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+.quote-author {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.quote-author::before {
+    content: '- ';
+    font-style: normal;
+    font-size: 1em;
+}
+
+.quote-controls {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.25em;
+}
+
+.new-quote {
+    margin: 1.25em 0;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.6s ease-in-out;
+}
+
+.social-icons {
+    display: flex;
+    gap: 40px;
+    transition: color 0.6s ease-in-out;
+}
+
+.social-icons a {
+
+    font-size: 1.15em;
+    cursor: pointer;
+}
+
+.quote-footer {
+    text-align: center;
+    padding: 5px;
+    font-size: x-small;
+    color: #666;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .quote-controls {
+        flex-direction: column;
+        margin-top: 1.25em;
+    }
+}
