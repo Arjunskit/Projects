@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    border: 1px solid #fff;
+    padding: 5rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.display-box {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.display-box input {
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #555;
+    background: #d1cec7;
+}
+
+.display-box span {
+    margin-right: 2rem;
+}
+
+.slider-box {
+    width: 100%;
+    height: 6px;
+    position: relative;
+    background: #d1cec7;
+    border-radius: 10px;
+}
+
+.slider {
+    background: green;
+    height: 100%;
+    position: absolute;
+    left: 25%;
+    right: 15%;
+    border-radius: 10px;
+
+}
+
+.range-input {
+    width: 100%;
+    position: relative;
+}
+
+.range-input input {
+    width: 100%;
+    position: absolute;
+    top: -10px;
+    -webkit-appearance: none;
+    background: none;
+    pointer-events: none;
+}
+
+.range-input input::-webkit-slider-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 70%;
+    background: #555;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
